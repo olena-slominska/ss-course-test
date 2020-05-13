@@ -10,8 +10,43 @@ html {
 	max-height:100px;
 	width: 50%;
 	float: right;
+	background-color: #f2c138;
+	
 	}
+.menu_list {
+	display: flex;
+	justify-content: center;
+	
+}
+.menu_list__item {
+	width: 120px;
+	word-wrap: normal;
+}
+.menu_list-link {
+	font-size: 16px;
+	line-height: 16px;
+	color: #5d502b;
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+	display: block;
+	padding: 30px 8px 30px;
+	font-weight: 800;
+	word-wrap: normal;
+	text-align:center
+}
+.menu_list-link:hover {
+color: maroon;
 
+html {
+	box-sizing: border-box;
+}
+
+
+.header_menu {
+	border: none;
+	width: 50%;
+	float: right;
+	}
 .menu_list {
 	display: flex;
 	justify-content: center;

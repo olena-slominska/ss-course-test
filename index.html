@@ -5,6 +5,8 @@
 	<title>Geni project Petrova-Slominska</title>
 	<meta charset="utf-8"  />
 	<meta name="viewport" content"width= device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-compatible" content="ie=edge" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -12,8 +14,12 @@
 
 <body>
 	<header>
-		<div class="lang">
-
+		<div class="lang_switch">
+			<label for="lang"></label>
+<select id="lang">
+  <option value="English">EN</option>
+  <option value="Russian">RU</option>  
+</select>
 		</div>
 <nav class="header_menu">
 <ul class="menu_list">
@@ -24,42 +30,44 @@
 	<li class="menu_list__item" ><a class="menu_list-link" href="#">Videos</a></li>
 </ul>
 </nav>
-<div class="header_tit_slider">
-<div class="header_title"><h1>Petrovs Family History</h1></div>
-<div class="header_slider"></div>
+</header>
+<div class="tit_slider">
+<h1 id="title"> Petrovs Family History</h1>
 
+	<section class="slider">
+		<div class="slider_item"></div>
+		<div class="slider_item"></div>
+		<div class="slider_item"></div>
+	</section>
 </div>
 
-	</header>
-	<section class="slider">
-		<div class="slider_item"><img src="images/Masha.jpg"></div>
-		<div class="slider_item"><img src="images/Masha.jpg"></div>
-		<div class="slider_item"><img src="images/Masha.jpg"></div>
-	</section>
+	
 	<section class="text">
 		<div class="text-item">
-			<h1>Purpose of this site</h1>
+			<h2>Purpose of this site</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam Continue reading...</p>
 	</div>
 		<div class="text-item">
-			<h1>My geni searh steps</h1>
+			<h2>My geni searh steps</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam Continue reading...</p>
 		</div>
 		<div class="text-item">
-			<h1>Acknowledgement part</h1>
+			<h2>Acknowledgement part</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam Continue reading...</p>
 		</div>
 				
 	
 	</section>
 	<footer>
-		<a href=#>Useful links for geni-addicts</a>
+		<a href="https://www.familysearch.org/wiki/en/Ukraine_Genealogy">Useful links for geni-addicts</a>
 		<button>Top</button>
 		<p>Follow me on:</p>
-		<p>Email to:</p>
+		<p>Email to:
+		<a HREF="mailto:slominska.olena@gmail.com">slominska.olena@gmail.com</a></p>
 	</footer>
-	
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 /* primary #8d6e63   #be9c91   #5f4339
 secondary #e0e0e0 #ffffff  #aeaeae
@@ -8,7 +8,7 @@ text on Secondary #ff8a65 orange
 
 html {
 	box-sizing: border-box;
-	background: #8d6e63;
+	background: #8d6e63;	
 	color: white;
 }
 h1, h2 {
@@ -24,14 +24,16 @@ h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Roboto', sans-serif;
 }
-header {
-	display: block;
+.header_switch_nav {
+	display: flex;
 	position: relative;
-	
+	justify-content: center;
 	padding: 0 15px;
+	
 }
 .lang_switch {
-	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
 	padding: 0;
 	
 	
@@ -39,14 +41,15 @@ header {
 select {
 	color: #ff8a65;
 	border-radius: 15px;
-	border: #be9c91 2px solid;
+	border: #be9c91 3px solid;
+	background-color: #e0e0e0;
 }
 
 .header_menu {
-	
-	display: flex;
-	float:right;
-	background-color: #be9c91;
+	margin-left: 200px;
+	margin-top: 20px;
+	display: flex;	
+	background:  #be9c91;
 	border-radius: 15px;
 	width:500px;
 	height: 50px;
@@ -57,14 +60,13 @@ select {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 0;
-	
-	
+	padding: 0;	
 }
 .menu_list__item {
 	display: flex;
 	height: 45px;
-	align-items: flex-end;
+	
+	align-items: center;
 	justify-content: center;
 	overflow-wrap: normal;
 	padding: 10px 5px;
@@ -78,132 +80,99 @@ select {
 	text-decoration: none;
 	font-family: Helvetica, sans-serif;
 	align-self: center;
-=======
-html {
-	box-sizing: border-box;
-}
-*,*::after, *::before{
-	box-sizing: inherit;
-}
-.header_menu {
-	display:block;
-	border: none;
-	max-height:100px;
-	width: 50%;
-	float: right;
-	background-color: #f2c138;
-	
-	}
-.menu_list {
-	display: flex;
-	justify-content: center;
-	
-}
-.menu_list__item {
-	width: 120px;
-	word-wrap: normal;
-}
-.menu_list-link {
-	font-size: 16px;
-	line-height: 16px;
-	color: #5d502b;
-	text-decoration: none;
-	font-family: Helvetica, sans-serif;
-	display: block;
->>>>>>> f596e2d10185ab3ac6b1a5eba5d955c244a594c6
-	padding: 30px 8px 30px;
+	padding: 10px 8px;
 	font-weight: 800;
 	word-wrap: normal;
-	text-align:center
+	text-align:center;
 }
 .menu_list-link:hover {
-<<<<<<< HEAD
 color: #ff8a65;
 }
 
 .tit_slider {
 	clear: both;
 	display: flex;
-	padding: 15px;
-	
+	padding: 0;
+	outline: none;
+	margin: 15px 0;
+	max-width: 100%;
+	justify-content: space-evenly;
 }
 .slider {
-	position: relative;
-	align-self: flex-end;
-	background-repeat: no-repeat;
+	max-width: 600px;
+	align-self: center;
 }
+
 .slider_item {
+	position: relative;
 	background-image: url("../images/Family_photo.jpg");
-	
 	min-height: 300px;
-	
 	background-repeat: no-repeat;	
 	background-size: cover;
-	background-position: right top;	
+	max-width: 600px;
+	min-width: 300px;
+	border-radius: 25px;
+	margin-right: 40px;
+	
+}
+.slick-arrow, .slick-arrow img, .slick-next, .slick-prev {
+	max-width: 40px;
+	max-height: 40px;	
+	border:none;
+	outline: none;
+	border-radius: 50%;
+	background-color: transparent;
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	padding: 0;
+	cursor: pointer;
+	transform: translateY(-50%);
 }
 
-	
-
+.slick-next {
+	right: 7em;	
+}
+.slick-prev {
+	left: 1em;
+}
+.tit_slider h1 {
+	width: 100px;
+	margin: 10px 25px 10px 50px;
+	align-self: center;
+	line-height: 2em;
+	text-shadow: #aeaeae 2px 2px;
+}
+.search {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+}
+.search_window {
+	color: #ff8a65;
+	border-radius: 15px;
+	border: #be9c91 3px solid;
+	background-color: #e0e0e0;
+}
+.search_window::placeholder {
+	color: #ff8a65;
+}
+button {
+	border: #be9c91 3px solid;
+	outline: none;
+	padding: 0;
+	border-radius: 15px;
+	background-color:#be9c91;  
+	color: white;
+}
+button:onclick {
+	color: #ff8a65;
+	font-weight: 900;
+	text-shadow: #aeaeae;
+}
 .text {
 	display: block;
 	width: 70%;
 	margin: 0 auto;
 }
-
-=======
-color: maroon;
-
-html {
-	box-sizing: border-box;
-}
-
-
-.header_menu {
-	border: none;
-	width: 50%;
-	float: right;
-	}
-.menu_list {
-	display: flex;
-	justify-content: center;
-	
-}
-.menu_list__item {
-	width: 120px;
-	word-wrap: normal;
-}
-.menu_list-link {
-	font-size: 16px;
-	line-height: 16px;
-	color: #5d502b;
-	text-decoration: none;
-	font-family: Helvetica, sans-serif;
-	display: block;
-	padding: 30px 8px 30px;
-	font-weight: 800;
-	word-wrap: normal;
-	text-align:center
-}
-.menu_list-link:hover {
-color: maroon;
-}
-.slider {
-	position: relative;
-}
-.slider_item {
-	display:block;
-	width:300px;
-	height:400px;
-	float: right;
-	background-image: url("Masha.jpg");
-	min-height: 300px;
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: cover;
-	
-}
-.slider_item img{
-	max-height: 300px;
-	max-width: 70%; 
-}
->>>>>>> f596e2d10185ab3ac6b1a5eba5d955c244a594c6

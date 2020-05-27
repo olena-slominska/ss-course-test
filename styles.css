@@ -55,3 +55,23 @@ color: maroon;
 	max-height: 300px;
 	max-width: 70%; 
 }
+footer {
+	width: 100vw;
+	max-height: 30vh;
+	min-height: 20vh;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.contMe {
+	width: 30%;
+}
+.usfLinks {
+	width: 20%;
+}
+#topBtn {
+	
+}

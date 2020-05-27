@@ -4,15 +4,21 @@
 secondary #e0e0e0 #ffffff  #aeaeae
 text on Primary #ffffff white
 text on Secondary #ff8a65 orange
+
+from Coolers.co
+C9CBA3 gray sage; FFE1A8 peach; E26D5C terracota; 723D46 catawba; 472D30 old burgundy
+
 */
 
 html {
 	box-sizing: border-box;
-	background: #8d6e63;	
+	background: #8d6e63;
+	background-image: url("https://www.transparenttextures.com/patterns/groovepaper.png");	
 	color: white;
 }
 h1, h2 {
 	color: #ff8a65;
+	text-shadow: #f3efef 2px 2px;
 }
 h1 {
 	font-style: italic;
@@ -86,34 +92,29 @@ select {
 	text-align:center;
 }
 .menu_list-link:hover {
-color: #ff8a65;
+color: #723D46;
 }
 
 .tit_slider {
-	clear: both;
 	display: flex;
+	flex: 3 5;
 	padding: 0;
 	outline: none;
-	margin: 15px 0;
-	max-width: 100%;
-	justify-content: space-evenly;
+	margin: 15px 5px;
+	justify-content: center;
 }
 .slider {
 	max-width: 600px;
 	align-self: center;
-}
+	}
 
+.slider_item img {
+	height: 415px;
+	width: 600px;
+	border-radius: 25px;
+	}
 .slider_item {
 	position: relative;
-	background-image: url("../images/Family_photo.jpg");
-	min-height: 300px;
-	background-repeat: no-repeat;	
-	background-size: cover;
-	max-width: 600px;
-	min-width: 300px;
-	border-radius: 25px;
-	margin-right: 40px;
-	
 }
 .slick-arrow, .slick-arrow img, .slick-next, .slick-prev {
 	max-width: 40px;
@@ -131,18 +132,19 @@ color: #ff8a65;
 }
 
 .slick-next {
-	right: 7em;	
+	right: 4em;	
 }
 .slick-prev {
 	left: 1em;
 }
-.tit_slider h1 {
-	width: 100px;
-	margin: 10px 25px 10px 50px;
+.title {
+	display: block;
+	width: 150px;
+	margin-right: 10px;
 	align-self: center;
 	line-height: 2em;
-	text-shadow: #aeaeae 2px 2px;
-}
+	left: 100px;
+	}
 .search {
 	position: relative;
 	display: flex;
@@ -152,13 +154,13 @@ color: #ff8a65;
 .search_window {
 	color: #ff8a65;
 	border-radius: 15px;
-	border: #be9c91 3px solid;
+	border: beige 3px solid;
 	background-color: #e0e0e0;
 }
 .search_window::placeholder {
 	color: #ff8a65;
 }
-button {
+.search_form_btn {
 	border: #be9c91 3px solid;
 	outline: none;
 	padding: 0;
@@ -166,8 +168,8 @@ button {
 	background-color:#be9c91;  
 	color: white;
 }
-button:onclick {
-	color: #ff8a65;
+.search_form_btn:hover {
+	color: #fab19a;
 	font-weight: 900;
 	text-shadow: #aeaeae;
 }
@@ -175,4 +177,83 @@ button:onclick {
 	display: block;
 	width: 70%;
 	margin: 0 auto;
+}
+#topBtn {
+position: fixed;
+bottom: 90px;
+right: 60px;
+border: #be9c91 3px solid;
+padding: 0;
+border-radius: 25px;
+background-color: #472D30;  
+color: #fff;
+width: 40px;
+height: 40px;
+cursor: pointer;
+outline: none;
+}
+#topBtn:hover {
+	background-color: rgb(238, 234, 226);
+	color: #221f1f;
+	font-weight: 700;
+}
+#topBtn:active {
+	background-color: #fff;
+	color: #aeaeae;
+}
+.shown {
+	display: block;
+}
+.hidden {
+	display: none;
+}
+.foo {
+
+	display: flex;
+	max-width:100%;
+	max-height:360px;
+	justify-content: space-around;
+	align-items: center;
+	margin: 30px 80px 40px 80px;
+	flex-wrap: nowrap;
+}
+.foo>div {
+	height:220px;
+	margin: 0 25px 25px 25px;
+	padding-bottom: 30px;
+}
+.contMe {
+	width: 300px;
+}
+.usfLinks, .scLinks {
+	width: 200px;
+}
+.myForm {
+	display: flex;
+	flex-direction: column;
+	background-color: #723D46;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+	border: 1 px solid #9CBA3;
+}
+.formField {
+	margin: 5px auto;
+	background-color: beige;
+	width: 90%;
+	border-radius: 6px;
+}
+.formField:active {
+	background-color: #C9CBA3;
+}
+h4 {
+	font-style: italic;
+	padding: 0 5px;
+	font-weight: 500;
+	text-shadow: #E26D5C 2px 2px;
+}
+#my-form-button {
+	background-color: #E0E0E0;
+	border-radius: 6px;
+	margin-bottom: 10px;
 }

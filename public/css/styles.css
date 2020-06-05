@@ -55,7 +55,7 @@ select {
 	margin-left: 200px;
 	margin-top: 20px;
 	display: flex;	
-	background:  #be9c91;
+	background:  #723D46;
 	border-radius: 15px;
 	width:500px;
 	height: 50px;
@@ -71,14 +71,12 @@ select {
 .menu_list__item {
 	display: flex;
 	height: 45px;
-	
 	align-items: center;
 	justify-content: center;
 	overflow-wrap: normal;
 	padding: 10px 5px;
 }
 .menu_list-link {
-	
 	font-style: italic;
 	font-size: 16px;
 	line-height: 16px;
@@ -92,7 +90,7 @@ select {
 	text-align:center;
 }
 .menu_list-link:hover {
-color: #723D46;
+color: #aeaeae;
 }
 
 .tit_slider {
